@@ -1,0 +1,123 @@
+.bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #1e1322;
+    
+}
+
+.formulario{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px #8d8b8f, -10px -10px 20px #8c898d;
+    padding: 50px 35px 35px 35px;
+}
+
+.logo {
+    background: url("../assets/nike.jpg");
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3,
+      10px 10px 20px #a7aaaf, -10px -10px 20px #ffffff;
+  }
+  
+ .gmailcontainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+ }
+
+
+  a{
+    position: relative;
+    background:rgba(92, 46, 84, 0.267);
+    color:#ffffff; 
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight:bold;
+    padding: 10px 30px;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  
+  a:hover{
+    letter-spacing: 0.20em;
+    background: rgb(243, 174, 228);
+    box-shadow: 0 0 36px rgb(243, 174, 228);
+  }
+
+  a::before{
+
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background:#1e1322;
+
+  }
+
+  a span{
+
+    position: relative;
+    z-index: 1;
+  }
+
+  a i{
+
+    position: absolute;
+    inset: 0;
+    display: block;
+
+  }
+
+
+  a i::before{
+
+    content: "";
+    position: absolute;
+    top: -5px;
+    left:  100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #1e1322;
+    border: 2px solid #ffffff;
+    transition: 0.5s;
+  }
+
+
+  a:hover i::before{
+
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 30px 30px #ffffff;
+  }
+
+
+  a i::after{
+
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left:  0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #1e1322;
+    border: 2px solid #ffffff;
+    transition: 0.5s;
+  }
+
+
+  a:hover i::after{
+
+    left: 100%;
+    transform: translateX(-50%) rotate(-138deg);
+    box-shadow: 30px 30px #ffffff;
+  }
